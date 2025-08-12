@@ -1,0 +1,256 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.main{
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    top: 20px;
+}
+.head{
+    height: 150px;
+    width: 200px;
+    border-radius: 100px 100px 0px 0px;
+    background-color: rgb(111, 214, 97);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.eyes{
+    height:25px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.eye1{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: rgb(10, 10, 10);
+    
+    
+}
+.eye2{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: hwb(0 5% 94%);
+    
+    
+}
+.con1{
+     height: 200px;
+     width: 280px;
+    padding-top: 10px;
+    display: flex;
+  
+    justify-content: space-between;
+
+    
+
+}
+.lefthand{
+     height: 150px;
+     width: 30px;
+     margin-top: 10px;
+     border-radius: 10px 10px 10px 10px;
+    background-color:pink;
+    
+    
+}
+.body{
+    height: 200px;
+    width: 200px;
+    border-radius: 0px 0px 90px 90px;
+    background-color: rgb(251, 255, 35);
+}
+.righthand{
+     height: 150px;
+     width: 30px;
+     margin-top: 10px;
+     border-radius: 10px 10px 10px 10px;
+    background-color:pink;
+}
+.con2{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.legleft{
+    position: relative;
+    bottom: 20px;
+    height: 110px;
+    width: 40px;
+     border-radius: 15px 15px 15px 15px;
+   background-color:rgb(17, 248, 210);
+
+}
+.legright{
+     position: relative;
+    bottom: 20px;
+    height: 110px;
+    width: 40px;
+     border-radius: 15px 15px 15px 15px;
+    background-color:rgb(17, 248, 210);
+}
+.main:hover .head{
+    animation: width 1s ease 1s infinite;
+}
+@keyframes width{
+    0%{
+        width:200px;
+    }
+    50%{
+        width: 250px;
+    }
+    100%{
+        width:200px;
+    }
+}
+.main:hover .eyes{
+    animation:transform 1s ease 1s infinite ;
+}
+@keyframes transform{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-30px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.main:hover .body{
+   animation:rotate-body 0.5s ease 1s infinite;
+}
+@keyframes rotate-body{
+    0%{
+        rotate: 0deg;
+        border-radius: 90px 90px 90px 90px;
+    }
+    100%{
+        rotate: 360deg;
+        border-radius: 90px 90px 90px 90px;
+    }
+}
+
+.main:hover .lefthand {
+  animation: rotate-lefthand 1s ease 1s infinite forwards;
+}
+@keyframes rotate-lefthand {
+  0% { 
+    rotate: 0px; 
+     transform-origin: top center;
+}
+  50%{ 
+    rotate: 90deg; 
+     transform-origin: top center;
+}
+  100% { 
+    rotate: 0px; 
+     transform-origin: top center;
+}
+}
+.main:hover .righthand {
+  animation: rotate-righthand 1s ease 1s infinite forwards;
+}
+@keyframes rotate-righthand {
+  0% {
+     rotate: 0px;
+      transform-origin: top center;
+     }
+  50%{ 
+    rotate: -90deg;
+     transform-origin: top center;
+ }
+  100%{ 
+    rotate: 0px;
+     transform-origin: top center;
+ }
+}
+
+.main:hover .legleft {
+  animation: rotate-legleft 1s ease 1s infinite forwards;
+}
+@keyframes rotate-legleft {
+  0%{ 
+    rotate: 0px; 
+     transform-origin: top center;
+}
+  50%{ 
+    rotate: 50deg; 
+     transform-origin: top center;
+}
+  100%{ 
+    rotate: 0px; 
+     transform-origin: top center;
+}
+}
+.main:hover .legright {
+  animation: rotate-legright 1s ease 1s infinite forwards;
+}
+@keyframes rotate-legright {
+  0% {
+     rotate: 0px;
+      transform-origin: top center;
+     }
+  50%{ 
+    rotate: -50deg;
+     transform-origin: top center;
+ }
+  100%{ 
+    rotate: 0px; 
+     transform-origin: top center;
+}
+}
+.main:hover {
+    animation: coloring 4s infinite linear;
+    border-radius: 100px;
+    transform-origin: center;
+}
+
+@keyframes coloring {
+    0% {
+        background-color: lawngreen;
+    }
+    10% {
+        background-color:orange;
+    }
+    20% {
+        background-color: rgb(255, 95, 47);
+        }
+    30% {
+        background-color: purple;
+    }
+    40% {
+        background-color: lightseagreen;
+    }
+    50% {
+        background-color: brown;
+    }
+    60% {
+        background-color:red;
+    }
+    70% {
+        background-color: darkgreen;
+    }
+    80% {
+        background-color: greenyellow;
+}
+90% {
+        background-color: rgb(231, 47, 255);
+}
+100% {
+        background-color: rgb(47, 255, 134);
+}
+}
+
